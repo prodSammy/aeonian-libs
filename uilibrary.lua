@@ -93,7 +93,7 @@ end
 --//
 
 --// Colors --//
-local Colors = library.theme or {
+local Colors = _G.theme or {
   Primary = Color3.fromRGB(27, 25, 27),
   Secondary = Color3.fromRGB(42, 40, 42),
   Tertiary = Color3.fromRGB(74, 73, 74),
@@ -107,6 +107,7 @@ local Colors = library.theme or {
   DarkerAccent = Color3.fromRGB(87, 167, 26),
   AccentText = Color3.fromRGB(235, 235, 235)
 }
+_G.theme = nil
 --//
 
 function library:Window(WindowArgs)
