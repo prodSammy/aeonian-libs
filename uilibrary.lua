@@ -85,10 +85,10 @@ if not isfolder("Aeonian") then
 makefolder("Aeonian")
 
 local Arrow = request({Url = "https://github.com/prodSammy/aeonian-libs/raw/main/dropdown.png", Method = "GET"})
-writefile("Aeonian/resize.png", Arrow.Body)
+writefile("Aeonian/dropdown.png", Arrow.Body)
 
 local Resize = request({Url = "https://github.com/prodSammy/aeonian-libs/raw/main/resize.png", Method = "GET"})
-writefile("Aeonian/dropdown.png", Resize.Body)
+writefile("Aeonian/resize.png", Resize.Body)
 end
 --//
 
