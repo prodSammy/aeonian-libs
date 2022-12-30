@@ -1,5 +1,5 @@
-local library = {
-flags = {}
+library = {
+    flags = {}
 }
 library.Flags = library.flags
 
@@ -81,19 +81,19 @@ function Utilities:GetMouse()
 return Vector2.new(UserInputService:GetMouseLocation().X + 1, UserInputService:GetMouseLocation().Y - 35)
 end
 
-if not isfolder("PPHUD") then
-makefolder("PPHUD")
+if not isfolder("Aeonian") then
+makefolder("Aeonian")
 
-local Arrow = request({Url = "https://raw.githubusercontent.com/Rain-Design/PPHUD/main/Dropdown.png", Method = "GET"})
-writefile("PPHUD/Arrow.png", Arrow.Body)
+local Arrow = request({Url = "https://github.com/prodSammy/aeonian-libs/raw/main/dropdown.png", Method = "GET"})
+writefile("Aeonian/resize.png", Arrow.Body)
 
-local Resize = request({Url = "https://raw.githubusercontent.com/Rain-Design/PPHUD/main/resize.png", Method = "GET"})
-writefile("PPHUD/Resize.png", Resize.Body)
+local Resize = request({Url = "https://github.com/prodSammy/aeonian-libs/raw/main/resize.png", Method = "GET"})
+writefile("Aeonian/dropdown.png", Resize.Body)
 end
 --//
 
 --// Colors --//
-local Colors = {
+local Colors = library.theme or {
   Primary = Color3.fromRGB(27, 25, 27),
   Secondary = Color3.fromRGB(42, 40, 42),
   Tertiary = Color3.fromRGB(74, 73, 74),
@@ -121,7 +121,7 @@ self.Hovering = false
 local SelectedTab = nil
 
 local Window = Utilities:Create("ScreenGui", {
-  Name = "PPHUD",
+  Name = "Aeonian",
   ZIndexBehavior = Enum.ZIndexBehavior.Global
 }, {
   Utilities:Create("Frame", {
@@ -165,7 +165,7 @@ local Window = Utilities:Create("ScreenGui", {
             Name = "ResizeIcon",
             Size = UDim2.new(0, 10, 0, 10),
             BackgroundTransparency = 1,
-            Image = getcustomasset("PPHUD/Resize.png"),
+            Image = getcustomasset("Aeonian/Resize.png"),
             AnchorPoint = Vector2.new(1, 1),
             Position = UDim2.new(1, 0, 1, 0),
             ZIndex = DropIndex + 5
@@ -1080,7 +1080,7 @@ local Dropdown = Utilities:Create("Frame", {
                 Size = UDim2.new(0, 10, 0, 10),
                 BackgroundTransparency = 1,
                 Rotation = 0, -- 180
-                Image = getcustomasset("PPHUD/Arrow.png"),
+                Image = getcustomasset("Aeonian/Arrow.png"),
                 AnchorPoint = Vector2.new(.5, .5),
                 Position = UDim2.new(.5, 0, .5, 0),
                 ZIndex = DropdownTable.Index
