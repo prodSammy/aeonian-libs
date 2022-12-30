@@ -187,7 +187,7 @@ local Window = Utilities:Create("ScreenGui", {
               RichText = true,
               TextXAlignment = Enum.TextXAlignment.Left,
               TextSize = 13,
-              Font = Enum.Font.SourceSansBold,
+              Font = Enum.Font.Ubuntu,
               TextColor3 = Colors.PrimaryText,
               ZIndex = DropIndex + 5
           }, {
@@ -277,7 +277,7 @@ Utilities:Create("Frame", {
         RichText = true,
         TextXAlignment = Enum.TextXAlignment.Left,
         TextSize = 13,
-        Font = Enum.Font.SourceSansBold,
+        Font = Enum.Font.Ubuntu,
         TextColor3 = Colors.PrimaryText,
         ZIndex = 11001
     })
@@ -339,7 +339,7 @@ local Message = Utilities:Create("Frame", {
         RichText = true,
         TextXAlignment = Enum.TextXAlignment.Left,
         TextSize = 13,
-        Font = Enum.Font.SourceSansBold,
+        Font = Enum.Font.Ubuntu,
         TextColor3 = consoleArgs.Color,
         ZIndex = 11002
     })
@@ -480,7 +480,7 @@ local Tab = Utilities:Create("Frame", {
       Size = UDim2.new(1, 0, 1, 0),
       Text = TabArgs.Text,
       RichText = true,
-      Font = Enum.Font.SourceSansBold,
+      Font = Enum.Font.Ubuntu,
       TextColor3 = Colors.SecondaryText,
       TextSize = 14,
       ZIndex = 2
@@ -609,7 +609,7 @@ local Section = Utilities:Create("Frame", {
       BackgroundTransparency = 1,
       TextColor3 = Colors.PrimaryText,
       RichText = true,
-      Font = Enum.Font.SourceSansBold,
+      Font = Enum.Font.Ubuntu,
       ZIndex = 2
   }),
   Utilities:Create("Frame", {
@@ -678,7 +678,7 @@ Utilities:Create("Frame", {
         Text = CheckArgs.Text,
         TextSize = 13,
         RichText = true,
-        Font = Enum.Font.SourceSansBold,
+        Font = Enum.Font.Ubuntu,
         Size = UDim2.new(0, 14, 0, 14),
         TextXAlignment = Enum.TextXAlignment.Left,
         Position = UDim2.new(0, 20, 0, 0),
@@ -767,7 +767,7 @@ Utilities:Create("Frame", {
         Size = UDim2.new(1, 0, 1, 0),
         Text = Info.Text,
         RichText = true,
-        Font = Enum.Font.SourceSansBold,
+        Font = Enum.Font.Ubuntu,
         BackgroundTransparency = 1,
         TextSize = 13,
         TextColor3 = Colors.PrimaryText
@@ -873,7 +873,7 @@ Utilities:Create("Frame", {
         Name = "SliderValueText",
         Text = StepFormat:format(Rounded)..Info.Postfix,
         TextSize = 13,
-        Font = Enum.Font.SourceSansBold,
+        Font = Enum.Font.Ubuntu,
         RichText = true,
         Size = UDim2.new(1, 0, 0, 14),
         TextColor3 = Color3.fromRGB(255, 255, 255),
@@ -888,7 +888,7 @@ Utilities:Create("Frame", {
         Name = "SliderText",
         Text = Info.Text,
         TextSize = 13,
-        Font = Enum.Font.SourceSansBold,
+        Font = Enum.Font.Ubuntu,
         RichText = true,
         Size = UDim2.new(1, 0, 0, 14),
         TextXAlignment = Enum.TextXAlignment.Left,
@@ -974,7 +974,7 @@ local Label = Utilities:Create("Frame", {
         Size = UDim2.new(0, 286, 0, 14),
         TextXAlignment = Enum.TextXAlignment.Left,
         TextSize = 13,
-        Font = Enum.Font.SourceSansBold
+        Font = Enum.Font.Ubuntu
     })
 })
 
@@ -1029,7 +1029,7 @@ local Dropdown = Utilities:Create("Frame", {
             Position = UDim2.new(0, 4, 0, 0),
             TextSize = 13,
             TextColor3 = Colors.TertiaryText,
-            Font = Enum.Font.SourceSansBold,
+            Font = Enum.Font.Ubuntu,
             ZIndex = DropdownTable.Index
         }),
         Utilities:Create("TextButton", {
@@ -1219,7 +1219,7 @@ function DropdownTable:Add(str)
             BackgroundTransparency = 1,
             RichText = true,
             TextColor3 = Colors.PrimaryText,
-            Font = Enum.Font.SourceSansBold,
+            Font = Enum.Font.Ubuntu,
             ZIndex = DropdownTable.Index
         }),
         Utilities:Create("TextButton", {
